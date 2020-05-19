@@ -2,7 +2,7 @@ const express = require('express');
 const routes = require('./routes');
 const cors = require('cors');
 
-import './database';
+require('./database');
 
 class App {
   constructor() {

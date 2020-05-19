@@ -13,6 +13,14 @@ class User extends Model {
       }
     );
   }
+
+  checkPassword(password) {
+    if (password !== this.password) {
+      return false;
+    } else {
+      return true;
+    }
+  }
 }
 
-export default User;
+module.exports = User;
