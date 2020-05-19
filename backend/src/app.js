@@ -2,6 +2,8 @@ const express = require('express');
 const routes = require('./routes');
 const cors = require('cors');
 
+import './database';
+
 class App {
   constructor() {
     this.server = express();
